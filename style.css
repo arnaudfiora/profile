@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Covered+By+Your+Grace&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro&display=swap');
 
-@media (max-width: 960px) { .container { width: 700px; } }
-@media (max-width: 720px) { .container { width: 500px; } }
-@media (max-width: 540px) { .container { width: 300px; } }
-
 body {
   font-family: 'Source Sans Pro', sans-serif;
   text-align: center;
@@ -21,7 +17,6 @@ a:hover {
 header, footer {
   background-color: #5c94bd;
   padding: 30px 0;
-  width: 75%;
   margin: 0 auto;
   border-radius: 10px;
 }
@@ -41,7 +36,6 @@ h2 {
 
 .card-blue {
   background-color: rgba(156,193,211,0.5);
-  width: 65%;
   padding: 10px;
   border-radius: 10px;
   margin: 20px auto;
@@ -69,8 +63,8 @@ h2 {
 }
 
 .img-circle {
-  width: 8%;
-  height: 8%;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
 }
 
@@ -91,4 +85,27 @@ footer .list-inline > li {
 
 .fab:hover {
   color: blue;
+}
+
+@media (max-width: 960px) {
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    width: 300px;
+    padding: 0 1px;
+    margin: auto;
+  }
+  .card-blue p {
+    padding: 0 1px;
+  }
 }
