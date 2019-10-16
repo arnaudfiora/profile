@@ -87,6 +87,11 @@ footer .list-inline > li {
   color: blue;
 }
 
+.container {
+  width: 900px;
+  margin: auto;
+}
+
 @media (max-width: 960px) {
   .container {
     width: 700px;
